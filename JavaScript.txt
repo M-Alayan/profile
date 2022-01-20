@@ -1,0 +1,36 @@
+<script type="text/javascript">
+        function Toggle(value){
+            switch(value){
+                case 'aboutMe':
+                    document.getElementById('aboutMe').style.display="block";
+                    document.getElementById('Projects').style.display="none";
+                    document.getElementById('Settings').style.display="none";
+                    break;
+                case 'Projects':
+                    document.getElementById('aboutMe').style.display="none";
+                    document.getElementById('Projects').style.display="block";
+                    document.getElementById('Settings').style.display="none";
+                    break;
+                case 'Settins':
+                    document.getElementById('aboutMe').style.display="none";
+                    document.getElementById('Projects').style.display="none";
+                    document.getElementById('Settings').style.display="block";
+                    break;
+            }
+        }
+
+        </script>
+
+onclick="Toggle('aboutMe')"
+
+onclick="Toggle('Projects')"
+
+onclick="Toggle('Settings')"
+
+id="aboutMe"
+
+id="Projects"
+
+id="Settings"
+
+

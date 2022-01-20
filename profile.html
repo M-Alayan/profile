@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function Toggle(value){
+            switch(value){
+                case 'aboutMe':
+                    document.getElementById('aboutMe').style.display="block";
+                    document.getElementById('Projects').style.display="none";
+                    document.getElementById('Settings').style.display="none";
+                    break;
+                case 'Projects':
+                    document.getElementById('aboutMe').style.display="none";
+                    document.getElementById('Projects').style.display="block";
+                    document.getElementById('Settings').style.display="none";
+                    break;
+                case 'Settings':
+                    document.getElementById('aboutMe').style.display="none";
+                    document.getElementById('Projects').style.display="none";
+                    document.getElementById('Settings').style.display="block";
+                    break;
+            }
+        }
+
+        </script>
+</head>
+
+
+<body>
+    <div class="main-box">
+
+    <div class="main-title-box">
+
+     <div class="cover-box">
+
+        <div><img src="avatar7.png " class="img-style"></div> 
+        <div class="person-name-box"><span>John Deon</span></div> 
+
+        
+     </div>
+   
+          <div class="menu-item-mainbox">
+            
+       <a href="#" class="menu-item" onclick="Toggle('aboutMe')">ABOUT ME</a>
+        <a href="#" class="menu-item" onclick="Toggle('Projects')">PROJECTS</a>
+        
+        <a href="#" class="menu-item" onclick="Toggle('Settings')">SETTINGS</a>
+    </div>
+
+    </div>
+
+    
+    <!--------------------->
+    <div  id="aboutMe"  >
+
+
+        <div class="info-language-box">
+<div class="box-style">
+    <div class="title-txt-box"><span>PERSONAL INFORMATION</span></div>
+     <div class="person-info-txt" >
+        <div class="txt-personalinfo">Full Name</div>
+        <div class="txt-personalinfocolor">johnathan Deo</div>
+        
+     </div>
+     <div class="person-info-txt" >
+        <div class="txt-personalinfo">Mobile</div>
+       <div class="txt-personalinfocolor">(123) 123 123</div>
+    </div>
+    <div class="person-info-txt" >
+        <div class="txt-personalinfo">Email</div>
+        <div class="txt-personalinfocolor">johnathan@maltran.com</div>
+        
+    </div>
+    <div class="person-info-txt" >
+        <div class="txt-personalinfo" >location</div>
+        <div class="txt-personalinfocolor">USA</div>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="box-style" >
+    <div class="title-txt-box"><span>LANGUAGE</span></div>  
+    <div class="box-padding"><ul style="color: darkgray;">
+        <li>English</li>
+        <li>Franch</li>
+        <li>Greek</li>
+    </ul></div>  
+
+</div>
+
+</div>
+
+
+<div class="bio-skill-box">
+
+<div class="piography-box">
+    <div class="title-txt-box"><span>PIOGRAPHY</span></div> 
+    <div class="box-padding">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+        </p>
+        <p style="font-weight: bold;">But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+            desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</div>
+
+
+<div class="box-style">
+    <div class="title-txt-box"><span>SKILLS</span></div> 
+
+    <div class="box-padding">
+<div class="skill-content-box">
+    <span >Angular Js</span>
+    <span style="float: right;">60%</span>
+    <div class="bottom-range-box"></div>
+</div>
+<div class="skill-content-box">
+    <span>Javascript</span>
+    <span style="float: right;">90%</span>
+    <div class="bottom-range-box"></div>
+</div>
+<div class="skill-content-box">
+    <span>Wordpress</span>
+    <span style="float: right;">80%</span>
+    <div class="bottom-range-box"></div>
+</div>
+<div class="skill-content-box">
+    <span>HTML5 & CSS3</span>
+    <span style="float: right;">95%</span>
+    <div class="bottom-range-box"></div>
+</div>
+</div>   
+</div>
+</div>
+    </div>
+
+
+    <div id="Projects"  style="display: none;" >
+        <div class="box-style">
+            <div class="title-txt-box"><span>MY PROJECTS</span></div> 
+            <div>
+                <table>
+                    <thead style="border-bottom: 3px solid #cccccc;" >
+                        <th>#</th>
+                        <th>Project Name</th>
+                        <th>Start Date</th>
+                        <th>Due Date</th>
+                        <th>Assign</th>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td>1</td>
+                            <td>Moltran Admin</td>
+                            <td>01/01/2015</td>
+                            <td>07/05/2015</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Moltran Frontend</td>
+                            <td>01/01/2015</td>
+                            <td>07/05/2015</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Moltran Admin</td>
+                            <td>01/01/2015</td>
+                            <td>07/05/2015</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                     
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="Settings"  style="display: none;">
+        <div class="box-style">
+        <div class="title-txt-box"><span>EDIT PROFILE</span></div> 
+<div class="edit-profile-input-box">
+    <form  method="get">
+        <div class="input-txt-name"><span class="txt-personalinfo" >Name</span></div>
+        <input type="text" class="input-txt-style"  placeholder="enter your name" required>
+        <div class="input-txt-name"><span class="txt-personalinfo" >Email</span></div>
+        <input type="email" class="input-txt-style" placeholder="enter your Email" required>
+        <div class="input-txt-name"><span class="txt-personalinfo">Username</span></div>
+        <input type="text" class="input-txt-style" placeholder="enter your user name" required>
+        <div class="input-txt-name"><span class="txt-personalinfo">Password</span></div>
+        <input type="password" class="input-txt-style" placeholder="enter your password"  minlength="8" required>
+        <div class="input-txt-name"><span class="txt-personalinfo">Re-Password</span></div>
+        <input type="password"  class="input-txt-style" placeholder="re-enter your password" minlength="8" required>
+        <div class="input-txt-name"><span class="txt-personalinfo">About Me</span></div>
+        <div><textarea class="txt-area"></textarea></div>
+        <div class="input-txt-name"><input type="submit" value="Save Change" class="save-btn-style"></div>
+</form></div>
+</div> 
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
